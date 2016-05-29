@@ -1,30 +1,34 @@
-<footer role="contentinfo" class='post-footer'>
-    <div class="inner">
-        <div class="vcard">
-          <a href="{{ site.baseurl }}/feed.xml" id="btn_feed" class="btn" title="Feed" target="_blank">
-                <span aria-hidden="true" data-icon=")"></span>
-                <strong>Feed</strong>
-            </a>
-
-            {% if site.logo %}
-            <a href="{{ site.baseurl }}" class="photo circle">
-              <span style="background-image: url('{{ site.baseurl }}/assets/images/{{ site.logo }}');">
-                <img src="{{ site.baseurl }}/assets/images/{{ site.logo }}" alt="{{ site.title }}"/>
-              </span>
-            </a>
-            {% endif %}
-
-            <div class="details">
-                <h4><a href="{{ site.url }}" class="url n">{{ site.title }}</a></h4>
-                <a href="{{ site.baseurl | prepend: site.url }}" class="js-remove-domain-schema">{{ site.url }}{{ site.baseurl }}</a><br>
-                <span>Published with <a href="https://jekyllrb.com">Jekyll</a></span><br>
-                <span><a href='https://github.com/vormwald/joon'>Source code</a></span>
-            </div>
-        </div>
-        <div id="user_bio">
-            <div class="inner">
-                {{ site.description }}
-            </div>
-        </div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h4><strong>{{ site.owner }}</strong>
+        </h4>
+        <p>
+          {% for address in site.address %}
+          {{ address.line }}<br>
+          {% endfor %}
+        </p>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-phone fa-fw"></i> {{ site.telephone }}</li>
+          <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </li>
+        </ul>
+        <br>
+        <ul class="list-inline">
+          <li>
+            <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github fa-fw fa-3x"></i></a>
+          </li>
+        </ul>
+        <hr class="small">
+        <p class="text-muted">Copyright &copy; {{ site.copyright }} 20{{ site.time | date: '%y' }}</p>
+      </div>
     </div>
+  </div>
 </footer>

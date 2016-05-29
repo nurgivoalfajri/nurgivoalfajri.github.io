@@ -1,33 +1,12 @@
-# Joon: Roon theme for Jekyll
+# Stylish Portolio template for Jekyll
 
-Jekyll theme based on the Roon for [Ghost](http://github.com/tryghost/roon/).
+A Jekyll implementation of the [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) template by [Start Bootstrap](http://startbootstrap.com/).
 
-## Demo
-View this jekyll theme in action [here](https://vormwald.github.io/joon)
+See the site in action at https://volny.github.io/stylish-portfolio-jekyll/
 
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/vormwald/joon/master/screenshot.png)
+## To use the Stylish Portfolio template in your project
 
-## Font Options
-
-This theme comes with two font options; a serif and sans-serif (the default). 
-Switching between them is done in the HTML, by adding `serif` to the `class` of 
-the `<body>` element in [head.html](https://github.com/vormwald/joon/blob/master/_layouts/default.html.hbs#L6).
-
-## Colour Options
-
-This theme uses an accent colour for links and the border at the top of pages.
-
-To change this colour, you need to edit [assets/css/screen.css](https://github.com/vormwald/joon/blob/master/assets/css/screen.css).
-
-There are only two values you need to change, conveniently **located at the very
-top of the file**.
-
-## For More Information
-For more on Jekyll, read the [documentation](http://jekyllrb.com/)
-
-
-## Copyright & License
-
-Roon is Copyright (c) 2013-2015 Sam Soffes & Ghost Foundation - Released under 
-the [MIT license](LICENSE).
+- Start by adding your info in `_config.yml`
+- Add as many address lines as you want. Your address will also be used to show your location on the map.
+- For the emdeded map to work you'll need to [get a key from Google Maps Embed API](https://developers.google.com/maps/documentation/embed/?hl=en)
+- In `_layouts/front.html` reorder or remove section as you prefer.
